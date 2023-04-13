@@ -16,12 +16,21 @@ body {
 
 /*navbar styling*/
 
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
 .navbar {
     background-color: white !important;
     height: 70px;
-    position:sticky;
+    position: sticky;
     padding: 0px !important;
     margin: 0px !important;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
 }
 
 .nav-item a {
@@ -58,14 +67,15 @@ body {
 .banner-section-inner {
     
     //border: 2px solid black;
-    height: auto;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     transform: translateY(120px);
-    //background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/background.JPEG);
+    //background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/background.JPEG');
+    
 }
 
     .banner-section-inner h2 {
@@ -85,9 +95,10 @@ body {
 
 
 .taxiImage{
-    height:450px;
+    height:370px;
     width:800px;
     padding-top:50px;
+    object-fit:contain;
    //transform:translateY(150px);
     //border:2px solid black;
 }
@@ -283,8 +294,8 @@ body {
 .feature-icon {
     font-size: 32px;
     //border: 1px solid white;
-    height: 50px;
-    width: 100px;
+    height: 75px;
+    width: 170px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -477,8 +488,11 @@ body {
 
     .navbar-nav{
         border:2px solid black;
-        background:transparent;
-        z-index:200;
+        background:black;
+        color:white;
+        padding:20px;
+        //z-index:200;
+        
     }
 
     .navbar-nav li{
@@ -487,7 +501,7 @@ body {
     }
 
         .nav-item a{
-            color:black!important;
+            color:white!important;
             font-weight:900;
         }
 
